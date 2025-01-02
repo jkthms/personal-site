@@ -1,0 +1,133 @@
+/* Option 1: JetBrains Mono (Recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --bg-color: #111111;
+    --text-color: #e0e0e0;
+    --link-color: #ffb86c;
+    --hover-color: #ff5555;
+    --secondary-color: #9e9e9e;  /* Changed from #666666 to #9e9e9e */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;  /* Changed from Inter to JetBrains Mono */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;  /* Added to ensure full height */
+    display: flex;      /* Added for better centering */
+    flex-direction: column;  /* Added to maintain vertical layout */
+    align-items: center;    /* Added to center horizontally */
+}
+
+header {
+    width: 100%;          /* Added to maintain proper width */
+    max-width: 800px;     /* Added to maintain proper width */
+    margin-bottom: 4rem;
+    text-align: center;   /* Optional: if you want centered text */
+}
+
+.profile {
+    width: 100%;          /* Added to maintain proper width */
+    max-width: 65ch;      /* Changed from just max-width to work with width */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;  /* Added to center the navigation items */
+    width: 100%;             /* Added to ensure full width */
+}
+
+nav {
+    width: 100%;             /* Added to ensure nav takes full width */
+    text-align: center;      /* Added for better alignment */
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+.profile {
+    max-width: 65ch;
+}
+
+.image-container {
+    margin: 2rem 0 3rem;
+}
+
+.image-container img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.image-container-banner {
+    margin: 2rem 0 3rem;
+}
+
+.image-container-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.profile p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.profile a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.profile a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .profile p {
+        font-size: 1rem;
+    }
+}
